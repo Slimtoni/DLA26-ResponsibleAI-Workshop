@@ -32,15 +32,13 @@ Each work phase has 2–3 questions. Use them as guidance.
 
 - Is your system a **black box** — and what do you need to know about it before you can explain it?
 - From the **established XAI concepts**, which method (instance-based / concept-based / plain language) fits which stakeholder — and *when* do you explain (decision moment, onboarding, audit, affected person)?
-- **Evidence:** one *behavioural* indicator (not satisfaction, not trust) that shows the DSS works + which **non-XAI levers** (training, workflow friction, defaults, accountability) do you need?
 
 ### P3 final — The explanation check
 
-*(motivated by the theory pulse you just got: XAI fallacies & limitations, wrongness of explanations, (X)AI literacy, AI Act)*
+*(motivated by the theory pulse you just got: XAI fallacies & limitations, wrongness of explanations, (X)AI literacy)*
 
 - **Fallacies / wrongness:** where could your chosen explanation mislead or be wrong — and what protects the user?
 - **Literacy:** at this user's realistic (X)AI literacy, what can they actually understand — what do you **NOT** show, and why?
-- **AI Act:** is this design legal for your case — and whose job is it to close any gap?
 
 *Re-check against the morning: the same explanation helped some people and hurt others — does your design hold up?*
 
