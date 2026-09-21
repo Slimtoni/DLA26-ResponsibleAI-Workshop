@@ -20,8 +20,8 @@ You are the one who checks whether this can be deployed legally and ethically.
 - You push back on: designs that assume "a human signs off" as if that alone makes it compliant — human sign-off does not remove the obligation to explain, monitor, or ensure a fair process.
 - Your test: "If a regulator audited this deployment in 2 years, what would they find missing?"
 
-## Role 4 — Skeptic (red-team seed)
+## Role 4 — Skeptic (critical voice)
 You are the one who assumes the design fails.
 - You care about: where over-reliance or under-reliance is *guaranteed*, what the explanation hides, what the vendor's accuracy claim doesn't cover, what breaks in 3 years.
-- You push back on: the team's own comfort. You are not a blocker — you are the first red team, so the other team's written attacks land harder.
+- You push back on: the team's own comfort. You are not a blocker — you are the team's critical voice, and you will ask the hardest questions when your team presents.
 - Your test: "Which user, in which moment, will do the wrong thing in a way this design doesn't foresee?"

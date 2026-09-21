@@ -6,67 +6,63 @@ Your team (4–5 people) is the project team of a company that is deploying an *
 
 **Main task:** design a **responsible DSS** for your scenario. The design must address **stakeholder needs** and **socio-technical requirements** — legal, ethical, and organisational — and apply the concepts from the theory input: **appropriate reliance, (X)AI literacy, and responsible application of Explainable AI (XAI)**.
 
-**Output:** one **A2 poster** per team. The poster is the basis for the red team and your final 1-minute deployment pitch.
+**Output:** one **A2 poster** per team. The poster is the basis for your **3-min pitch** in the plenary — where the other teams give you critical feedback.
 
-## How the day works
+## Phase questions
 
-- Session 2 (from 11:10): **P1** decision & risks (20 min) → theory input → **P2** predict behaviour (25 min)
-- Lunch — a real break
-- Session 3: morning's results + what they mean for your design → **P3** design (40 min) → **P4 red team** — another team writes attacks on your poster (15 min) → **P5** one revision (10 min) → plenary: **1-min deployment pitch** per team
+Each work phase has 2–3 questions. Use them as guidance.
 
-Theory input comes in short pulses — right before you need each concept.
+### P1 — Decision & risks
 
-## Working principles
+- How does this decision look **without** the DSS — who decides today, on what basis, and what does it cost?
+- **Error economy:** what does a false positive cost here, and what does a false negative cost — and **who bears each**?
+- Is there a **Red line**? Something, the system is never allowed to do?
 
-1. **Red line first.** Before designing anything, write one statement: *"This system must never ___."* Everything else is checked against it.
-2. **Affected person is a mandatory input.** Design for the decision-maker, *and* answer what the affected person (rejected applicant, patient, denied borrower) is entitled to know and influence.
-3. **Filled in backwards.** Outcome and error economy first, target reliance behaviour second, the human as they are, and only then the explanation. Left alone, teams start at the explanation and design a dashboard.
-4. **Design for the human as they are** — realistic literacy, realistic time pressure, realistic incentives.
-5. **Roles.** Each team member takes one role card (decision-maker / affected person / regulator / skeptic). Your design must satisfy all four.
+### P2 — AR + Risk
 
-## Poster structure
+*(motivated by the theory pulse you just got: appropriate reliance + over/under-reliance risk)*
 
-Structure your A2 around these zones:
+- Where does the user **over-rely**, and where do they **under-rely**?
+- Which human behaviour is the real risk here — and *which user* lands in it?
+- What in the case (time pressure, incentives, error asymmetry) pushes them toward that behaviour?
 
-| Zone | Contents |
-|---|---|
-| **P1 Decision & risks** | Stakeholders · decision without AI · error economy (cost of FP vs FN, who bears each) · **red line statement** |
-| **P2 Predict behaviour** | The 2×2: which quadrant failure is the real risk here · what the user *actually* does at their realistic (X)AI literacy |
-| **P3 Design** | XAI: whom/what/when, which form, **what NOT to show and why** · beyond explanation: legal, training, workflow friction, defaults, timing, accountability |
-| **Evidence** | One *behavioural* indicator that would show it worked (not satisfaction, not trust) + how you would measure it |
-| **Attack surface** | *(filled by another team in the red team)* |
-| **Revision** | One change in response to the strongest attack |
+### P3 core — Evidence & design
 
-## Guiding questions
+*(motivated by the theory pulse you just got: black-box, XAI fundamentals, established XAI concepts)*
 
-### All teams
+- Is your system a **black box** — and what do you need to know about it before you can explain it?
+- From the **established XAI concepts**, which method (instance-based / concept-based / plain language) fits which stakeholder — and *when* do you explain (decision moment, onboarding, audit, affected person)?
+- **Evidence:** one *behavioural* indicator (not satisfaction, not trust) that shows the DSS works + which **non-XAI levers** (training, workflow friction, defaults, accountability) do you need?
 
-- Who are the stakeholders?
-- How does the decision look like without an AI-based DSS?
-- Which risks when using an AI-based DSS?
-- Which human behaviour do you expect in the interaction with the AI (under-reliance, over-reliance)?
+### P3 final — The explanation check
 
-### XAI-related questions
+*(motivated by the theory pulse you just got: XAI fallacies & limitations, wrongness of explanations, (X)AI literacy, AI Act)*
 
-- **Whom** do you explain to, **what**, and **when** — at the decision moment, in training/onboarding, in audit, or to the *affected person* (explanation duty)?
-- **What will you NOT show, and why** — explanation overload, explanation wrongness, cost of the user's attention?
-- **Explanation wrongness:** if the explanation is wrong or misleading, can the user detect that? What protects them?
-- **Uncertainty:** should the system display uncertainty — and can this user actually use it?
-- **Literacy match:** what does "understood" mean for *this* user at *their* realistic (X)AI literacy — not the idealised one?
-- **Method choice:** instance-based (saliency, SHAP) vs concept-based (SemanticLens) vs plain language — which fits which stakeholder?
+- **Fallacies / wrongness:** where could your chosen explanation mislead or be wrong — and what protects the user?
+- **Literacy:** at this user's realistic (X)AI literacy, what can they actually understand — what do you **NOT** show, and why?
+- **AI Act:** is this design legal for your case — and whose job is it to close any gap?
 
-### Further questions
+*Re-check against the morning: the same explanation helped some people and hurt others — does your design hold up?*
 
-- How could **(X)AI literacy** help — and whose job is it to build: training, UX, or regulation?
-- **Accountability:** when the system errs, who is liable — operator, deployer, vendor? How is that distributed?
-- **Red lines:** what would you *refuse* to deploy in this scenario, and why?
-- **Longevity:** what breaks in 3 years — model drift, staff turnover, regulation change?
+### Plenary — Pitch & critical feedback (3 min pitch + 2 min feedback per team)
+
+**You present:**
+
+- What makes this design **responsible** — in three minutes?
+- What is the **biggest residual risk** you are accepting?
+- Be ready to answer questions on the spot.
+
+**You judge:**
+
+- Where is over-reliance (or under-reliance) **guaranteed** in their design — which user, which moment?
+- **What if the explanation is wrong** — can anyone in their design detect that?
+- **Who is excluded** — which stakeholder does their design silently ignore?
+
+Note the strongest feedback on your poster — it becomes your revision idea.
 
 ## Your case
 
-Your case is **assigned, not chosen** (each pulls in a different direction: over- vs. under-reliance). Your case consists of two files:
+Your case is **assigned**. Your case folder (`Team 1` – `Team 6`) contains two files:
 
-- `cases/0X-<case>.md` — the case brief: context, decision, AI output, error economy, what the human sees vs. what the AI sees, the AI system card (vendor-provided), and regulatory context
-- `stakeholder-cards/0X-<case>-stakeholders.md` — stakeholder cards: goals, fears, what they want to know, what they are entitled to
-
-> **No solution hints in the case briefs** — that is deliberate. The design is yours.
+- `case.md` — the case brief: context, decision, AI output, error economy, what the human sees vs. what the AI sees, the AI system card (vendor-provided), and regulatory context
+- `stakeholder-cards.md` — stakeholder cards: goals, fears, what they want to know, what they are entitled to
